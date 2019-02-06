@@ -1,0 +1,16 @@
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+#content {
+    width: 60%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
