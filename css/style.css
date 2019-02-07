@@ -13,4 +13,36 @@ button {
     width: 60%;
     padding-bottom: 20px;
     padding-top: 20px;
+    
+
+}
+#hello {
+    background-color: black;
+    color: white;
+    width: 200px;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+  text-align: center;
+ 
+
+}
+
+#dogType {
+    width: 200px;
+    height: 3em;
+    text-align: center;
+    background-color: black;
+ 
+ 
+   
+}
+
+#addDog {
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+  text-align: center;
+ 
 }
