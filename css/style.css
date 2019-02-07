@@ -7,24 +7,39 @@ button {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 20px;
+    font-family: 'Unica One', cursive;
 }
 
-#content {
-    width: 60%;
-    padding-bottom: 20px;
-    padding-top: 20px;
+h1 {
+    font-family: 'VT323', monospace;
+    font-size: 50px;
+   
+}
     
 
-}
+ #gifPlace {
+     text-align: center;
+  
+ }
+
+ #dogGif {
+     padding-right: 10px;
+ }
+
+
 #hello {
     background-color: black;
     color: white;
     width: 200px;
-  padding-bottom: 1.5em;
-  padding-top: 1.5em;
+      padding-bottom: 1em;
+  padding-top: 1em;
   text-align: center;
- 
-
+  float: left;
+margin-right: 0px;
+  margin-left: 0px;
+ float: top;
+ position: absolute;
+ font-family: 'Special Elite', cursive;
 }
 
 #dogType {
@@ -32,8 +47,13 @@ button {
     height: 3em;
     text-align: center;
     background-color: black;
- 
- 
+    margin-left: 0px;
+    margin-top: 60px;
+  position: absolute;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  font-family: 'Unica One', cursive;
+  
    
 }
 
@@ -41,8 +61,16 @@ button {
     background-color: black;
     color: white;
     width: 200px;
-    padding-bottom: 1.5em;
-    padding-top: 1.5em;
+    margin-right: 0px;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-size: 15px;
   text-align: center;
- 
+  margin-left: 0px;
+  margin-top: 111px;
+  font-family: 'Monoton', cursive;
+
 }
+
+
+

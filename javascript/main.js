@@ -9,7 +9,7 @@ $(document).on("click", "#addDog", function () {
 
 
 
-$(".one").on("click", function() {
+$(document).on("click", ".one", function() {
     event.preventDefault();
     var animal = $(this).attr("data-animal");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=dc6zaTOxFJmzC&limit=10";
@@ -19,7 +19,14 @@ $(".one").on("click", function() {
     })
         .then(function (response) {
             var results = response.data;
-            for (var i = 0; i < results.length; i++) {
+            for (var i = 0; i < 9; i++) {
+              
+
+                // i have attempted this for several hours and im just not gettng it to display how i want it to :[
+               // var rating = $("<p>")
+               // rating.attr("src", results[i].rating);
+               // $("#gifPlace").append("Raiting: ", rating);
+
 
                 var dogGif = $('<img>')
                 dogGif.attr('src', results[i].images.fixed_height_still.url);
@@ -27,6 +34,7 @@ $(".one").on("click", function() {
                 dogGif.attr('data-animate', results[i].images.fixed_height.url);
                 dogGif.addClass('gif');
                 dogGif.attr('data-state', "still");
+                dogGif.attr("width", "300px");
                 $("#gifPlace").append(dogGif);
 
                 $(dogGif).on("click", function() {
@@ -39,16 +47,14 @@ $(".one").on("click", function() {
                         $(this).attr('data-state', 'still');
                    
                     }
-                });
-
+            
                
-
-
+                })
+    
+           
 
 
             }
-
         })
+    
 })
-
-
