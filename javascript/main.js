@@ -9,7 +9,10 @@ $(document).on("click", "#addDog", function () {
 
 
 
+    
+
 $(document).on("click", ".one", function () {
+    $("#gifPlace").empty();
     event.preventDefault();
     var animal = $(this).attr("data-animal");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=dc6zaTOxFJmzC&limit=10";
@@ -53,3 +56,4 @@ $(document).on("click", ".one", function () {
         })
 
 })
+
