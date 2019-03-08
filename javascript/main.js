@@ -24,7 +24,7 @@ $(document).on("click", ".one", function () {
             var results = response.data;
             for (var i = 0; i < 9; i++) {
                 
-                $("#gifPlace").append("<p>", "Rating: ", results[i].rating, "</p>");
+                $("#gifPlace").append(results[i].dogType);
                 var dogGif = $('<img>');
                 dogGif.attr('src', results[i].images.fixed_height_still.url);
                 dogGif.attr('data-still', results[i].images.fixed_height_still.url);
@@ -32,7 +32,6 @@ $(document).on("click", ".one", function () {
                 dogGif.addClass('gif');
 
                 dogGif.attr('data-state', "still");
-
                 $("#gifPlace").append(dogGif);
 
                 $(dogGif).on("click", function () {
@@ -43,7 +42,6 @@ $(document).on("click", ".one", function () {
                     } else {
                         $(this).attr('src', $(this).data('still'));
                         $(this).attr('data-state', 'still');
-
                     }
 
 
@@ -56,4 +54,3 @@ $(document).on("click", ".one", function () {
         })
 
 })
-
